@@ -34,4 +34,13 @@ console.log(`${MM}-${DD}-${YYYY} ${HH}:${mm}`);
 // question 1 Create a human readable time format using the Date time object. The hour and the minute should be all the time two digits(7 hours should be 07 and 5 minutes should be 05 )
 
 
+let YYYY1 = new Date().getFullYear();
+let MM1 = new Date().getMonth();
+let DD1 = new Date().getDay();
+let HH1 = new Date().getHours();
+let mm1 = new Date().getMinutes();
 
+if (HH1<10){ HH1 = '0' + HH1; }
+if (mm1<10){ mm1 = '0' + mm1 }
+
+console.log(`${YYYY1}-${MM1}-${DD1} ${HH1}:${mm1}`);
