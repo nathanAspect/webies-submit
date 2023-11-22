@@ -9,5 +9,29 @@ let age = new Date().getFullYear() - birthYear;
 age >= 18 ? alert(`You are ${age}. You are old enough to drive`) : alert(`You are ${age}. You will be allowed to drive after  ${18 - age} years.`);
 
 
-// question 14
+// question 14 Write a script that prompt the user to enter number of years. Calculate the number of seconds a person can live. Assume some one lives just hundred years
+
+let Year = prompt("Enter number of years you live: ");
+
+let Seconds = Year * 31536000;
+
+alert(`You lived ${Seconds} seconds.`);
+
+// 15. Create a human readable time format using the Date time object
+
+let YYYY = new Date().getFullYear();
+let MM = new Date().getMonth();
+let DD = new Date().getDay();
+let HH = new Date().getHours();
+let mm = new Date().getMinutes();
+
+console.log(`${YYYY}-${MM}-${DD} ${HH}:${mm}`);
+console.log(`${DD}-${MM}-${YYYY} ${HH}:${mm}`);
+console.log(`${MM}-${DD}-${YYYY} ${HH}:${mm}`);
+
+//  exercise 3
+
+// question 1 Create a human readable time format using the Date time object. The hour and the minute should be all the time two digits(7 hours should be 07 and 5 minutes should be 05 )
+
+
 
