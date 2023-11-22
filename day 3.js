@@ -35,12 +35,9 @@ console.log(`${MM}-${DD}-${YYYY} ${HH}:${mm}`);
 
 
 let YYYY1 = new Date().getFullYear();
-let MM1 = new Date().getMonth();
-let DD1 = new Date().getDay();
-let HH1 = new Date().getHours();
-let mm1 = new Date().getMinutes();
-
-if (HH1<10){ HH1 = '0' + HH1; }
-if (mm1<10){ mm1 = '0' + mm1 }
+let MM1 = String(new Date().getMonth() + 1).padStart(2, "0");
+let DD1 = String(new Date().getDate()).padStart(2, "0");
+let HH1 = String(new Date().getHours()).padStart(2, "0");
+let mm1 = String(new Date().getMinutes()).padStart(2, "0");
 
 console.log(`${YYYY1}-${MM1}-${DD1} ${HH1}:${mm1}`);
