@@ -30,4 +30,11 @@ console.log("1 1 1 1 1\n2 1 2 4 8\n3 1 3 9 27\n4 1 4 16 64\n5 1 5 25 125");
 
 // exercise 3
 
-//
+// 12. Use substr to slice out the phrase because because because from the following sentence:'You cannot end a sentence with because because because is a conjunction'
+
+let string12 = 'You cannot end a sentence with because because because is a conjunction';
+
+let index12 = string12.indexOf("because because because");
+let length12 = "because because because".length;
+
+string12.substr(index12, length12);
