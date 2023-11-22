@@ -38,3 +38,15 @@ let index12 = string12.indexOf("because because because");
 let length12 = "because because because".length;
 
 string12.substr(index12, length12);
+
+
+// exercise 3
+
+// 2. Use match() to count the number of all because in the following sentence:'You cannot end a sentence with because because because is a conjunction'
+
+let string2 = 'You cannot end a sentence with because because because is a conjunction';
+
+let length2 = string2.match(/because/gi).length;
+
+console.log(length2);
+
