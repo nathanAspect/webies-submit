@@ -11,3 +11,15 @@ console.log("The last index of the work 'because' is " + lastIndex);
 
 let stringOut = "30 Days fo JavaScript";
 console.log(stringOut.repeat(2));
+
+// exercise 2
+
+
+// 6. I hope this course is not full of jargon. Check if jargon is in the sentence.
+
+let String6 = "I hope this course is not full of jargon";
+
+let result6 = String6.includes("jargon");
+
+console.log(result6);
+
